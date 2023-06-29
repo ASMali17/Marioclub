@@ -1,0 +1,429 @@
+header{
+    background-color: rgb(225, 239, 236);
+    color :rgb(255, 0, 0);
+    text-align: center;
+    padding: 10px;
+    top:0;
+    left:0;
+    position: fixed;
+    width:100%;
+    z-index: 1;
+    border-bottom: 8px solid red;
+
+}
+header h1{
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 20px;
+    font-size: 70px;
+    border: 8px solid red;
+    border-radius: 50px;
+}
+
+.banner{
+    position: relative;
+    top: 180px;
+}
+.banner img{
+    width: 100%;
+}
+.banner .welcome{
+    position: absolute;
+    left:13%;
+    bottom:77%;
+    /* color:white; */
+    
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 89px;
+    color:red;
+    padding: 0 30px;
+    margin:0;
+}
+.banner h2{
+    display:inline;
+    font-size: 180px;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+div.navi{
+    position:relative;
+    top:150px;
+    
+    
+    
+}
+/* nav{
+    position: sticky;   
+   
+    
+} */
+nav ul{
+    
+    background-color: rgb(225, 239, 236);
+    text-align: center;
+    padding: 40px;
+    border-bottom: 8px solid red;
+    border-top: 8px solid red;
+}
+nav ul li {
+    
+   display:inline-block;
+   width:23%;
+   list-style-type: none; 
+     
+}
+
+nav ul li a{
+    color:red;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    font-size: 50px;
+}
+main{
+    position:relative;
+    top:160px;
+}
+article h2{
+    color:red;
+    font-size: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+article p{
+    font-size: 30px;
+    text-justify: auto;
+    margin-top: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    margin-left: 20px;
+    
+}
+
+ul.images{
+    text-align: center;
+    width:100%;
+    box-sizing: border-box;
+    
+    
+}
+ul.images li {
+    list-style-type: none;    
+    display:inline-block;
+    white-space: nowrap;
+    width:40%;
+    
+    margin:40px;
+    
+}
+section.join2{
+    position:relative;
+    top:170px;
+    padding:10px;
+    background-color: rgb(225, 239, 236);
+    color:#4b4b4b;
+    text-align: center;
+}
+
+section.join2 h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    margin:0;
+    
+}
+section.join2 p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    margin:10px;   
+}
+ form input{
+    padding:15px 15px;
+    font-size: 25px;
+    border-radius: 25px;
+    border : 3px solid black;
+    
+}
+
+footer{
+    position:relative;
+    top:170px;
+    background-color: red;
+    color:white;
+    text-align: center;
+    padding:10px;
+}
+footer p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;;
+}
+
+
+/* Psedo classes */
+
+nav li a:hover{
+    text-decoration: underline;
+}
+ul.images li:hover{
+    position: relative;
+    top:-5px;
+
+}
+
+form input:focus{
+    border : 3px solid white;
+    outline:none;
+}
+
+form input:invalid{
+    border : 5px solid red;
+}
+form input:valid{
+    border : 5px solid #71d300;
+}
+
+
+p::selection{
+    background-color: red;
+    color:white;
+}
+h1::selection{
+    background-color: red;
+    color:white;
+}
+h2::selection{
+    background-color: red;
+    color:white;
+}
+a::selection{
+    background-color: red;
+    color:white;
+}
+footer::selection{
+        background-color: red;
+        color:white;
+}
+
+/* Medis queries */
+
+
+
+@media screen and (max-width : 1900px)
+{
+    .banner h2{
+        font-size : 150px;
+    }
+    .img1{
+        width:750px;
+    }
+    .img2{
+        width:750px;
+    }
+}
+@media screen and (max-width : 1800px)
+{
+    .banner h2{
+        font-size : 130px;
+    }
+    .img1{
+        width:700px;
+    }
+    .img2{
+        width:700px;
+    }
+}
+@media screen and (max-width : 1600px)
+{
+    .banner h2{
+        font-size : 120px;
+    }
+    .img1{
+        width:650px;
+    }
+    .img2{
+        width:650px;
+    }
+    header{
+        display:inline;       
+    }
+    header h1{
+        font-size: 60px; 
+    }
+    .heading{
+        /* bottom:1000px; */
+    }
+    nav ul li a{
+        font-size: 45px;
+    }
+    
+}
+@media screen and (max-width : 1400px)
+{
+    .banner h2{
+        font-size : 100px;
+    }
+    .img1{
+        width:550px;
+    }
+    .img2{
+        width:550px;
+    }
+    header h1{
+        font-size: 57px; 
+    }
+    nav ul li a{
+        font-size: 40px;
+    }
+    .banner{
+        top: 170px;
+    }
+    div.navi{
+        top:145px;
+    }
+    
+}
+@media screen and (max-width : 1200px)
+{
+    .banner h2{
+        font-size : 85px;
+    }
+    
+    ul.images li{
+        display:block;
+        width:100%;
+    }
+    .img1{
+        width:650px;
+    }
+    .img2{
+        width:650px;
+    }
+    header h1{
+        font-size: 55px; 
+    }
+    
+    .navi{
+        top:120px;
+    }
+    nav ul li a{
+        font-size: 35px;
+    }
+    ul.images li{
+        margin-left:0;
+    }
+}
+
+@media screen and (max-width : 1000px)
+{
+    header h1{
+        font-size: 50px;
+        border: 6px solid red; 
+    }
+    .banner h2{
+        font-size : 70px;
+    }
+    
+    ul.images li{
+        display:block;
+        width:100%;
+    }
+    ul.images li{
+     
+        width:100%;
+    }
+    nav ul li a{
+        font-size: 25px;
+    }
+    .banner{
+        top: 155px;
+    }
+    div.navi{
+        top:133px;
+    }
+    article p{
+        font-size: 25px;
+    }
+    .img1{
+        text-align: center;
+    }
+}
+@media screen and (max-width : 850px)
+{
+    header h1{
+        font-size: 40px;
+        border: 5px solid red; 
+    }
+    .banner h2{
+        font-size : 55px;
+    }
+    .banner{
+        top: 140px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width : 700px)
+{
+    header h1{
+        font-size: 30px;
+        border: 4px solid red; 
+    }
+    .banner h2{
+        font-size : 35px;
+        padding-left:0;
+        
+    }
+    .banner .welcome{
+        padding:0;
+    }
+    .banner{
+        top: 130px;
+    }
+    nav ul li a{
+        font-size: 25px;
+    }
+    article h2{
+        font-size: 40px;
+
+    }
+    .img1{
+        width:450px;
+    }
+    .img2{
+        width:450px;
+    }
+    .images {
+        padding:0;
+    }
+    .banner .welcome{
+        border: 2px solid white;
+        padding: 0 4px;
+    }
+    nav ul li {
+        display: block;
+        width:100%;
+        text-align: left;
+        margin : 0 10px;
+        list-style-type: square;
+        
+    }
+    @media screen and (max-width : 700px)
+    {
+        .img1{
+            width:400px;
+        }
+        .img2{
+            width:400px;
+        }
+        section.join2 h2{
+            font-size: 30px;
+        }
+        section.join2 p{
+            font-size: 20px;
+        }
+        
+    }
+}
