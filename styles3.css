@@ -426,4 +426,20 @@ footer::selection{
         }
         
     }
+     @media screen and (max-width : 450px)
+    {
+        .img1{
+            width:360px;
+        }
+        .img2{
+            width:360px;
+        }
+        section.join2 h2{
+            font-size: 30px;
+        }
+        section.join2 p{
+            font-size: 20px;
+        }
+        
+    }
 }
